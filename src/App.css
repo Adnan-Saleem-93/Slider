@@ -1,0 +1,51 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 1vmin);
+  max-width: 80% !important;
+  margin: auto !important;
+}
+.page-title {
+  margin: 0 auto !important;
+  margin-top: 5rem !important;
+  color: #046582;
+}
+hr {
+  width: 25% !important;
+  height: 5px !important;
+  background-color: #bb8082 !important;
+  border-radius: 5rem !important;
+  border: none !important;
+  opacity: 1 !important;
+  margin: 1rem auto !important;
+}
+.main-section {
+  margin-top: 3rem !important;
+}
+.btn {
+  background-color: #046582 !important;
+  color: white !important;
+  margin: 0 0.5rem !important;
+}
+.btn:hover {
+  background-color: #bb8082 !important;
+}
+img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  box-shadow: 0px 2px 10px 5px rgb(0 0 0 / 15%), 0 6px 20px 0 rgb(0 0 0 / 15%);
+}
+.person {
+  text-transform: uppercase;
+  margin-top: 1rem !important;
+  font-weight: 700;
+  color: #be8943cc;
+  margin-bottom: 0 !important;
+}
+.designation {
+  font-size: 15px;
+  text-transform: capitalize;
+}
