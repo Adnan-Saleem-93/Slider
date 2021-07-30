@@ -13,7 +13,7 @@
   color: #046582;
 }
 hr {
-  width: 25% !important;
+  width: 10% !important;
   height: 5px !important;
   background-color: #bb8082 !important;
   border-radius: 5rem !important;
@@ -28,6 +28,8 @@ hr {
   background-color: #046582 !important;
   color: white !important;
   margin: 0 0.5rem !important;
+  position: relative;
+  top: 50%;
 }
 .btn:hover {
   background-color: #bb8082 !important;
@@ -48,4 +50,12 @@ img {
 .designation {
   font-size: 15px;
   text-transform: capitalize;
+}
+.quote {
+  font-size: 15px;
+  color: #000000b5;
+}
+.quote-start,
+.quote-end {
+  color: #bb8082;
 }

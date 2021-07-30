@@ -10,15 +10,15 @@ const ReviewSection = () => {
 
   return (
     <Row className="main-section">
-      <Col>
+      <Col md={1}>
         <Button className="btn-left" variant="light" title="Previous" onClick={handleButtonClick}>
           <FontAwesomeIcon icon={faAngleDoubleLeft} size="lg" />
         </Button>
       </Col>
-      <Col>
+      <Col md={10}>
         <Reviews activeReview={activeReview} />
       </Col>
-      <Col>
+      <Col md={1}>
         <Button className="btn-right" variant="light" title="Next" onClick={handleButtonClick}>
           <FontAwesomeIcon icon={faAngleDoubleRight} size="lg" />
         </Button>
