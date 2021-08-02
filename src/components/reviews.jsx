@@ -9,7 +9,6 @@ const Reviews = ({activeReview}) => {
   useEffect(() => {
     // first remove all 'next and prev' slide classes
     let articles = document.querySelectorAll("[class^=article_]");
-    console.log(articles);
     articles.forEach((item) => {
       item.classList.remove("active-slide", "prev-slide", "next-slide");
     });
