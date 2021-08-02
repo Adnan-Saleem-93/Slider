@@ -53,9 +53,22 @@ img {
 }
 .quote {
   font-size: 15px;
-  color: #000000b5;
+  color: #000000cf;
+  font-style: italic;
 }
 .quote-start,
 .quote-end {
   color: #bb8082;
+}
+[class^="article_"] {
+  transition: all 0.3s linear;
+}
+.active-slide {
+  transform: translateX(0);
+}
+.next-slide {
+  transform: translateX(100%);
+}
+.prev-slide {
+  transform: translateX(-100%);
 }
