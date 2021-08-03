@@ -1,35 +1,40 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(12px + 1vmin);
-  max-width: 80% !important;
-  margin: auto !important;
+  margin: 5rem auto;
+}
+@media screen and (min-width: 992px) {
+  .App {
+    width: 95vw;
+  }
 }
 .page-title {
-  margin: 0 auto !important;
-  margin-top: 5rem !important;
   color: #046582;
 }
 hr {
-  width: 10% !important;
-  height: 5px !important;
+  width: 7.5vw !important;
+  height: 6px !important;
   background-color: #bb8082 !important;
   border-radius: 5rem !important;
   border: none !important;
   opacity: 1 !important;
   margin: 1rem auto !important;
 }
-.main-section {
-  margin-top: 3rem !important;
+.review-section {
+  margin: 3rem !important;
+  position: relative;
+  overflow: hidden;
 }
 .btn {
   background-color: #046582 !important;
   color: white !important;
-  margin: 0 0.5rem !important;
-  position: relative;
+  position: absolute !important;
   top: 50%;
+}
+.btn-left {
+  left: 0;
+}
+.btn-right {
+  right: 0;
 }
 .btn:hover {
   background-color: #bb8082 !important;

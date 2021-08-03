@@ -14,31 +14,25 @@ const ReviewSection = () => {
   };
 
   return (
-    <Row className="main-section">
-      <Col md={1}>
-        <Button
-          className="btn-left"
-          variant="light"
-          title="Previous"
-          onClick={() => handleButtonClick("left")}
-        >
-          <FontAwesomeIcon icon={faAngleDoubleLeft} size="lg" />
-        </Button>
-      </Col>
-      <Col md={10}>
-        <Reviews activeReview={activeReview} />
-      </Col>
-      <Col md={1}>
-        <Button
-          className="btn-right"
-          variant="light"
-          title="Next"
-          onClick={() => handleButtonClick("right")}
-        >
-          <FontAwesomeIcon icon={faAngleDoubleRight} size="lg" />
-        </Button>
-      </Col>
-    </Row>
+    <section className="review-section">
+      <Reviews activeReview={activeReview} />
+      <Button
+        className="btn-left"
+        variant="light"
+        title="Previous"
+        onClick={() => handleButtonClick("left")}
+      >
+        <FontAwesomeIcon icon={faAngleDoubleLeft} size="lg" />
+      </Button>
+      <Button
+        className="btn-right"
+        variant="light"
+        title="Next"
+        onClick={() => handleButtonClick("right")}
+      >
+        <FontAwesomeIcon icon={faAngleDoubleRight} size="lg" />
+      </Button>
+    </section>
   );
 };
 

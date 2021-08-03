@@ -72,7 +72,7 @@ const Reviews = ({activeReview}) => {
     });
   };
 
-  return <section>{renderReviewsList()}</section>;
+  return <>{renderReviewsList()}</>;
 };
 
 export default Reviews;
