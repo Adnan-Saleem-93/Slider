@@ -5,8 +5,7 @@ import ReviewSection from "./components/review-section";
 function App() {
   return (
     <div className="App">
-      <h1 className="page-title text-center">Reviews</h1>
-      <hr />
+      <h1 className="page-title">Reviews</h1>
       <ReviewSection />
     </div>
   );

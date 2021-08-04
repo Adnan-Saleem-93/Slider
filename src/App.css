@@ -9,19 +9,21 @@
 }
 .page-title {
   color: #046582;
-}
-hr {
-  width: 7.5vw !important;
-  height: 6px !important;
-  background-color: #bb8082 !important;
-  border-radius: 5rem !important;
-  border: none !important;
-  opacity: 1 !important;
-  margin: 1rem auto !important;
+  text-align: center;
+  border-bottom: 8px solid #bb8082;
+  border-radius: 0.75vw;
+  width: max-content;
+  margin: auto;
+  padding-bottom: 1vw;
 }
 .review-section {
-  margin: 3rem !important;
+  margin: 4rem auto 0;
+  width: 80vw;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
   position: relative;
+  display: flex;
   overflow: hidden;
 }
 .btn {
@@ -58,18 +60,28 @@ img {
 }
 .quote {
   font-size: 15px;
-  color: #000000cf;
+  color: #191c46b0;
+  font-weight: 500;
   font-style: italic;
+  max-width: 50vw;
+  margin: 2rem auto;
 }
 .quote-start,
 .quote-end {
   color: #bb8082;
 }
-[class^="article_"] {
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
   transition: all 0.3s linear;
 }
 .active-slide {
   transform: translateX(0);
+  opacity: 1;
 }
 .next-slide {
   transform: translateX(100%);

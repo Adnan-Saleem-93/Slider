@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import people from "../utils/data";
-import {Row, Col, Image} from "react-bootstrap";
+import {Image} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faQuoteRight, faQuoteLeft} from "@fortawesome/free-solid-svg-icons";
 
@@ -47,26 +47,17 @@ const Reviews = ({activeReview}) => {
   const renderReviewsList = () => {
     return people.map(({id, name, image, title, quote}, index) => {
       return (
-        <article
-          key={index}
-          hidden={activeReview !== id ? true : false}
-          className={`article_${id} text-center`}
-          id={`article_${id}`}
-        >
-          <Row>
-            <Col>
-              <Image src={image} alt={name} roundedCircle />
-              <p className="person">{name}</p>
-              <p className="designation">{title}</p>
-              <p className="quote-start">
-                <FontAwesomeIcon icon={faQuoteLeft} size="lg" />
-              </p>
-              <p className="quote">{quote}</p>
-              <p className="quote-end">
-                <FontAwesomeIcon icon={faQuoteRight} size="lg" />
-              </p>
-            </Col>
-          </Row>
+        <article key={index} className={`article_${id}`} id={`article_${id}`}>
+          <Image src={image} alt={name} roundedCircle />
+          <p className="person">{name}</p>
+          <p className="designation">{title}</p>
+          <p className="quote-start">
+            <FontAwesomeIcon icon={faQuoteLeft} size="lg" />
+          </p>
+          <p className="quote">{quote}</p>
+          <p className="quote-end">
+            <FontAwesomeIcon icon={faQuoteRight} size="lg" />
+          </p>
         </article>
       );
     });
